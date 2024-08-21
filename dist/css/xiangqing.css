@@ -1,0 +1,381 @@
+@charset "UTF-8";
+.warpper,
+.header-list::after {
+  content: "";
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+
+ul,
+ol li {
+  list-style: none;
+}
+
+body {
+  background-color: #f6f1eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #f6f1eb;
+  width: 100%;
+}
+.header .warpper {
+  width: 100%;
+  padding: 0 68px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: #f6f1eb;
+}
+.header .warpper .header-list {
+  width: 240px;
+  height: 20px;
+  margin-top: 14px;
+  font-size: 12px;
+  color: #696969;
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  padding-inline-start: 0px;
+}
+.header .warpper .header-list li {
+  height: 20px;
+  cursor: pointer;
+}
+.header .page-header {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 0px;
+}
+.header .page-header .logo {
+  width: 1124px;
+  height: 50px;
+  background-color: #f6f1eb;
+  margin: 0 auto;
+  font-size: 10px;
+  color: dimgray;
+  font-size: 10px;
+  display: flex;
+  position: relative;
+}
+.header .page-header .logo #li-icon {
+  width: 202px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.header .page-header .logo #li-icon .mulu {
+  padding: 5px 5px 5px 10px;
+  font-size: 10px;
+}
+.header .page-header .header-search {
+  width: 730px;
+  height: 50px;
+  margin: 0px 40px;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+}
+.header .page-header .header-search .sousuo {
+  width: 138px;
+  height: 30px;
+  border: 1px solid gray;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.header .page-header .header-search .sousuo .btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 30px;
+  margin-left: 5px;
+  font-weight: 400;
+  font-family: Microsoft YaHei, å¾®è½¯é›…é»‘, SimHei, é»‘ä½“, PingFang SC, èæ–¹, Noto Sans;
+}
+.header .page-header .header-search .sousuo input {
+  width: 90px;
+  height: 30px;
+  padding: 5px 5px 5px 10px;
+  background: none;
+  outline: none;
+  border: none;
+}
+.header .page-header .header-search img {
+  width: 84px;
+  height: 46px;
+  position: absolute;
+  left: 330px;
+}
+.header .user {
+  width: 200px;
+  margin-right: 10px;
+  font-weight: 200;
+  font-family: Microsoft YaHei, å¾®è½¯é›…é»‘, SimHei, é»‘ä½“, PingFang SC, èæ–¹, Noto Sans;
+}
+.header .user .user-name {
+  color: dimgray;
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: 200;
+  font-size: 16px;
+}
+.header .user .user-name span {
+  font-size: 8px;
+  margin: 0px 6px;
+  font-family: Microsoft YaHei, å¾®è½¯é›…é»‘, SimHei, é»‘ä½“, PingFang SC, èæ–¹, Noto Sans;
+}
+.header .car {
+  position: absolute;
+  right: -110px;
+  width: 200px;
+  margin-left: 60px;
+  font-weight: 200;
+  font-family: Microsoft YaHei, å¾®è½¯é›…é»‘, SimHei, é»‘ä½“, PingFang SC, èæ–¹, Noto Sans;
+}
+.header .car .user-car {
+  font-size: 16px;
+  color: dimgray;
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+}
+.header .car .user-car span {
+  font-size: 8px;
+  font-weight: 200;
+  margin: 0px 6px;
+}
+
+.block-edito {
+  width: 1024px;
+  height: 245px;
+  margin: 0 auto;
+  padding: 60px 120px 40px 120px;
+  margin: 0px 100px;
+  text-align: center;
+}
+.block-edito .editorial-block-title {
+  font-size: 28px;
+  line-height: 30px;
+  color: #444;
+  font-weight: 400;
+  margin: 0 0 20px -2px;
+  font-family: Orator W01, Microsoft YaHei, å¾®è½¯é›…é»‘, PingFang SC, èæ–¹, Noto Sans, SimHei, é»‘ä½“, Gill Sans, Gill Sans MT, Calibri, serif;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+.block-edito .editorial-block-intro,
+.block-edito .intro-btn {
+  color: #444;
+  margin: 16px 0px;
+  padding: 0px 1px;
+  font-size: 16px;
+  height: 46px;
+  line-height: 22px;
+  font-family: Courier New, Microsoft YaHei, å¾®è½¯é›…é»‘, PingFang SC, èæ–¹, Noto Sans, SimHei, é»‘ä½“, monospace;
+  overflow-wrap: break-word;
+}
+.block-edito .editorial-block-intro .intro-btn,
+.block-edito .intro-btn .intro-btn {
+  width: auto;
+  height: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.block-edito .editorial-block-intro .intro-btn span,
+.block-edito .intro-btn .intro-btn span {
+  border-bottom: 1px solid #444;
+}
+.block-edito .editorial-block-intro .intro-btn:hover u,
+.block-edito .intro-btn .intro-btn:hover u {
+  text-decoration: none;
+}
+
+.bot-text {
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+}
+.bot-text .box {
+  width: 1064px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 0px 108px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-around;
+}
+.bot-text .box .help-col {
+  width: 445px;
+  min-height: 145px;
+  box-sizing: border-box;
+  margin: 40px auto;
+  padding: 0px 84px;
+  text-align: center;
+  color: #444;
+}
+.bot-text .box .help-col .help-wenti {
+  margin: 5px auto 12px;
+}
+.bot-text .box .help-col a {
+  color: #444;
+  border-bottom: 1px solid #444;
+}
+.bot-text .box .help-col a:hover {
+  border-bottom: none;
+}
+.bot-text .box .help-col h2 {
+  padding: 20px 25px 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #444;
+  font-family: Microsoft YaHei, 微软雅黑, SimHei, 黑体, PingFang SC, 萍方, Noto Sans, Gill Sans, Gill Sans MT, Calibri, serif;
+  font-weight: 400;
+}
+.bot-text .box .help-col p {
+  font-size: 10px;
+  font-weight: 200;
+}
+
+footer {
+  width: 100%;
+  background-color: #fff;
+}
+footer .footer {
+  width: 1223px;
+  height: 122px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+footer .footer .footer-subscribe {
+  width: 338px;
+  height: 122px;
+  margin: 0px auto 10px;
+  text-align: center;
+}
+footer .footer .footer-subscribe h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #444;
+  font-family: Microsoft YaHei, 微软雅黑, SimHei, 黑体, PingFang SC, 萍方, Noto Sans, Gill Sans, Gill Sans MT, Calibri, serif;
+  padding-bottom: 7px;
+  line-height: 20px;
+}
+footer .footer .footer-subscribe p {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 20px;
+  font-family: Microsoft YaHei, 微软雅黑, SimHei, 黑体, PingFang SC, 萍方, Noto Sans, Gill Sans, Gill Sans MT, Calibri, serif;
+}
+footer .footer .footer-subscribe button {
+  width: 280px;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 20px 18px;
+  margin: 10px 0px;
+  cursor: pointer;
+  border-radius: 6px;
+  color: white;
+  border: none;
+  text-decoration: none;
+  text-transform: none;
+  background-color: #444;
+}
+footer .lists {
+  width: 1223px;
+  height: 290px;
+  margin: 0 auto;
+  padding: 0px 108px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .lists p {
+  font-size: 18px;
+  color: #444;
+  margin-left: 0;
+  letter-spacing: 0;
+  font-family: Microsoft YaHei, 微软雅黑, SimHei, 黑体, PingFang SC, 萍方, Noto Sans, Gill Sans, Gill Sans MT, Calibri, serif;
+  font-weight: 400;
+}
+footer .lists li {
+  font-size: 12px;
+  font-weight: 200;
+  color: #444;
+  margin: 10px 0px;
+  font-family: Microsoft YaHei, 微软雅黑, SimHei, 黑体, PingFang SC, 萍方, Noto Sans, Gill Sans, Gill Sans MT, Calibri, serif;
+}
+footer .footer-right {
+  width: 1064px;
+  height: 53px;
+  margin: 0 auto;
+  font-size: 8px;
+  font-weight: 200;
+  color: #444;
+  border-top: 1px solid #e5e5e5;
+  font-family: Microsoft YaHei, 微软雅黑, SimHei, 黑体, PingFang SC, 萍方, Noto Sans;
+  color: #444;
+}
+footer .footer-right .p1 {
+  width: 1064px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+footer .footer-right .p1 .box1 {
+  color: #444;
+}
+footer .footer-right .p1 .box1 a {
+  border-bottom: 1px solid #444;
+}
+footer .footer-right .p1 .box1 span {
+  margin: 0px 15px;
+}
+footer .footer-right .p1 a:hover {
+  border: none;
+}
+footer .footer-right .p1 .box2 img {
+  width: 24px;
+  height: 24px;
+  margin: 0px 5px;
+}
+footer .footer-right .p2 {
+  color: #444;
+  font-size: 8px;
+  font-weight: 200;
+}
+footer .footer-right .p2 a {
+  border-bottom: 1px solid #444;
+  margin-right: 10px;
+}
+footer .footer-right .p2 a:hover {
+  border: none;
+}
+footer .footer-logo {
+  width: 100%;
+  height: 150px;
+  margin: 0px auto;
+  background-color: white;
+  padding-top: 50px;
+}
+footer .footer-logo .img {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}

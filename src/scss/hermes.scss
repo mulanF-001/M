@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none
+}
+@import "./_header.scss";
+@import "./_biaoti.scss";
+@import "./video";
+@import "./jingdian";
+@import "./shanyao";
+@import "./xiangshui";
+@import "./bot-text";
+@import "./footer";
+@import "./louti";
+@import "./lunbotu";
+@import "./denglu";
+@import "./left-mulu";

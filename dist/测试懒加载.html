@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .right-bot{
+            width: 1400px;
+            margin: 0 auto;
+            height: auto;
+            background-color: red;
+        }
+        .pic{
+            width: 180px;
+            height: auto;
+            background-color:yellow;
+            float: left;
+            margin-right: 40px;
+        }
+        .tu{
+            width: 180px;
+            height: auto;
+        }
+        .pic img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="right-bot">
+
+</div>
+    
+</body>
+<script src="./javascripts/ajax-promise.js"></script>
+<script src="./javascripts/jQuery.js"></script>
+<script src="./javascripts/jquery.lazyload.js"></script>
+<script>
+    $(function () {
+        var pi = document.querySelector(".right-bot")
+        $(document).ready(function () {
+            $.ajax({
+                url: "http://127.0.0.1:8080/dist/data/data.json"
+            })
+                .done(function (data) {
+                    render(data)
+                        sort();
+                    console.log(data);
+                })
+        })
+        function render(res) {
+            pi.innerHTML = res.data.map(item => `
+                        <div class="pic">
+                            <div class="tu">
+                                <img src="${item.url}"alt="">
+                            </div>
+                            <div class="tex">
+                                    <h3>${item.title}</h3>
+                                    <p>${item.price} </p>
+                                </div>
+                        </div>
+                `).join("");
+        }
+        function sort(){
+                  let $box = $(".pic")
+                  // 分割 : 第一行的元素和其他的元素; 
+                  // 存储瀑布流每一列的高度; 
+                  height_array = [];
+                  let offset_array = [];
+                  $.each( $box , function( index , ele ){
+                        // 区分第一行的元素; 
+                        if( index < 4 ){
+                              height_array.push( $(ele).outerHeight() );
+                              // 记录每个元素的left值; 
+                              // - 参照物应该是外部的定位元素; 
+                              offset_array.push( $(ele).position().left );
+                        }else{
+                              // 其余等待排列的元素
+                              // 在数组之中取得最小值高度; 
+                              let min_height = Math.min.apply( false , height_array);
+                              // 取出offset_array 之中和最小高度下标相同位置的left值，并把这个left值赋值给当前的元素;
+                              let min_index = height_array.indexOf(min_height);
+                              let _left = offset_array[min_index]
+
+                              // 把剩余等待排列的元素放到最小高度元素的下面; 
+                              $(ele).css({
+                                    position : "absolute",
+                                    top  : min_height,
+                                    left : _left
+                              });
+
+                              // 记录当前拼接好的数据， 给height_array 增加的高度; 
+                              height_array[min_index] += $(ele).outerHeight();
+                        }
+                  })
+                  console.log( height_array );
+            }
+
+    })
+</script>
+</html>

@@ -1,0 +1,866 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.warpper,
+.header-list::after {
+  content: "";
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+
+ul,
+ol li {
+  list-style: none;
+}
+
+body {
+  background-color: #f6f1eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #f6f1eb;
+  width: 100%;
+}
+.header .warpper {
+  width: 100%;
+  padding: 0 68px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: #f6f1eb;
+}
+.header .warpper .header-list {
+  width: 240px;
+  height: 20px;
+  margin-top: 14px;
+  font-size: 12px;
+  color: #696969;
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  padding-inline-start: 0px;
+}
+.header .warpper .header-list li {
+  height: 20px;
+  cursor: pointer;
+}
+.header .page-header {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 0px;
+}
+.header .page-header .logo {
+  width: 1124px;
+  height: 50px;
+  background-color: #f6f1eb;
+  margin: 0 auto;
+  font-size: 10px;
+  color: dimgray;
+  font-size: 10px;
+  display: flex;
+  position: relative;
+}
+.header .page-header .logo #li-icon {
+  width: 202px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.header .page-header .logo #li-icon .mulu {
+  padding: 5px 5px 5px 10px;
+  font-size: 10px;
+}
+.header .page-header .header-search {
+  width: 730px;
+  height: 50px;
+  margin: 0px 40px;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+}
+.header .page-header .header-search .sousuo {
+  width: 138px;
+  height: 30px;
+  border: 1px solid gray;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.header .page-header .header-search .sousuo .btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 30px;
+  margin-left: 5px;
+  font-weight: 400;
+  font-family: Microsoft YaHei, å¾®è½¯é›…é»‘, SimHei, é»‘ä½“, PingFang SC, èæ–¹, Noto Sans;
+}
+.header .page-header .header-search .sousuo input {
+  width: 90px;
+  height: 30px;
+  padding: 5px 5px 5px 10px;
+  background: none;
+  outline: none;
+  border: none;
+}
+.header .page-header .header-search img {
+  width: 84px;
+  height: 46px;
+  position: absolute;
+  left: 330px;
+}
+.header .user {
+  width: 200px;
+  margin-right: 10px;
+  font-weight: 200;
+  font-family: Microsoft YaHei, å¾®è½¯é›…é»‘, SimHei, é»‘ä½“, PingFang SC, èæ–¹, Noto Sans;
+}
+.header .user .user-name {
+  color: dimgray;
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: 200;
+  font-size: 16px;
+}
+.header .user .user-name span {
+  font-size: 8px;
+  margin: 0px 6px;
+  font-family: Microsoft YaHei, å¾®è½¯é›…é»‘, SimHei, é»‘ä½“, PingFang SC, èæ–¹, Noto Sans;
+}
+.header .car {
+  position: absolute;
+  right: -110px;
+  width: 200px;
+  margin-left: 60px;
+  font-weight: 200;
+  font-family: Microsoft YaHei, å¾®è½¯é›…é»‘, SimHei, é»‘ä½“, PingFang SC, èæ–¹, Noto Sans;
+}
+.header .car .user-car {
+  font-size: 16px;
+  color: dimgray;
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+}
+.header .car .user-car span {
+  font-size: 8px;
+  font-weight: 200;
+  margin: 0px 6px;
+}
+
+.block-edito {
+  width: 1024px;
+  height: 245px;
+  margin: 0 auto;
+  padding: 60px 120px 40px 120px;
+  margin: 0px 100px;
+  text-align: center;
+}
+.block-edito .editorial-block-title {
+  font-size: 28px;
+  line-height: 30px;
+  color: #444;
+  font-weight: 400;
+  margin: 0 0 20px -2px;
+  font-family: Orator W01, Microsoft YaHei, å¾®è½¯é›…é»‘, PingFang SC, èæ–¹, Noto Sans, SimHei, é»‘ä½“, Gill Sans, Gill Sans MT, Calibri, serif;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+.block-edito .editorial-block-intro,
+.block-edito .intro-btn {
+  color: #444;
+  margin: 16px 0px;
+  padding: 0px 1px;
+  font-size: 16px;
+  height: 46px;
+  line-height: 22px;
+  font-family: Courier New, Microsoft YaHei, å¾®è½¯é›…é»‘, PingFang SC, èæ–¹, Noto Sans, SimHei, é»‘ä½“, monospace;
+  overflow-wrap: break-word;
+}
+.block-edito .editorial-block-intro .intro-btn,
+.block-edito .intro-btn .intro-btn {
+  width: auto;
+  height: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.block-edito .editorial-block-intro .intro-btn span,
+.block-edito .intro-btn .intro-btn span {
+  border-bottom: 1px solid #444;
+}
+.block-edito .editorial-block-intro .intro-btn:hover u,
+.block-edito .intro-btn .intro-btn:hover u {
+  text-decoration: none;
+}
+
+.box4 {
+  width: 1064px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 6384px;
+  height: 600px;
+  left: 0;
+  position: absolute;
+}
+
+.slide {
+  width: 1064px;
+  height: 600px;
+  float: left;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.duotu {
+  width: 1064px;
+  height: 655px;
+  margin: 0 auto;
+}
+.duotu .block-text {
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 824px;
+  height: 40px;
+  padding: 60px 0px 40px 0px;
+  font-size: 28px;
+  color: #444;
+  line-height: 30px;
+  font-family: Orator W01, Microsoft YaHei, 寰蒋闆呴粦, PingFang SC, 钀嶆柟, Noto Sans, SimHei, 榛戜綋, Gill Sans, Gill Sans MT, Calibri, serif;
+  font-weight: 400;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+.duotu .duotu-img {
+  width: 1064px;
+  height: 600px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.duotu .duotu-img li {
+  width: 236px;
+  height: 236px;
+}
+.duotu .duotu-img li p {
+  width: 236px;
+  height: 22px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #444;
+  margin: 10px 0px;
+  font-family: "Orator W01", "Microsoft YaHei", 微软雅黑, "PingFang SC", 萍方, "Noto Sans", SimHei, 黑体, "Gill Sans", "Gill Sans MT", Calibri, serif;
+}
+.duotu .duotu-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.jingdian {
+  width: 1064px;
+  min-height: 100px;
+  margin: 0 auto;
+  background-color: #fffcf7;
+  margin: 120px 120px 60px 120px;
+  padding: 60px 120px;
+  color: #444;
+}
+.jingdian .field-item {
+  width: 824px;
+  height: 40px;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0 0 20px -2px;
+  font-family: Orator W01, Microsoft YaHei, å¾®è½¯é›…é»‘, PingFang SC, èæ–¹, Noto Sans, SimHei, é»‘ä½“, Gill Sans, Gill Sans MT, Calibri, serif;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+.jingdian p {
+  width: 824px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  margin: 16px 0px;
+}
+.jingdian .tiaozhuan {
+  width: 824px;
+  height: 22px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.jingdian .tiaozhuan a {
+  font-size: 14px;
+  font-weight: 200;
+  font-family: Microsoft YaHei, 微软雅黑, SimHei, 黑体, PingFang SC, 萍方, Noto Sans;
+  text-decoration: none;
+  background-image: linear-gradient(rgba(105, 105, 105, 0.8) 50%, rgba(105, 105, 105, 0.8) 0);
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  background-size: 1px 1px;
+  color: #696969;
+}
+.jingdian .tiaozhuan a:hover {
+  background-image: none;
+}
+.jingdian .lazyloaded {
+  width: 824px;
+  height: 464px;
+  margin: 0 auto;
+}
+.jingdian .lazyloaded img {
+  border: 0;
+  display: block;
+  height: auto;
+  left: 0;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+  width: 100%;
+}
+
+.shanyao {
+  width: 1064px;
+  min-height: 100px;
+  margin: 0 auto;
+  margin: 120px 120px 60px 120px;
+  color: #444;
+}
+.shanyao .wenben {
+  padding: 60px 120px 10px 120px;
+}
+.shanyao .field-item {
+  width: 824px;
+  height: 40px;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0 0 20px -2px;
+  font-family: Orator W01, Microsoft YaHei, å¾®è½¯é›…é»‘, PingFang SC, èæ–¹, Noto Sans, SimHei, é»‘ä½“, Gill Sans, Gill Sans MT, Calibri, serif;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+.shanyao p {
+  width: 824px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  margin: 16px 0px;
+}
+.shanyao .tiaozhuan {
+  width: 824px;
+  height: 22px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.shanyao .tiaozhuan a {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Microsoft YaHei, 微软雅黑, SimHei, 黑体, PingFang SC, 萍方, Noto Sans;
+  text-decoration: none;
+  background-image: linear-gradient(rgba(105, 105, 105, 0.8) 50%, rgba(105, 105, 105, 0.8) 0);
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  background-size: 1px 1px;
+  color: #696969;
+}
+.shanyao .tiaozhuan a:hover {
+  background-image: none;
+}
+.shanyao .img {
+  width: 1064px;
+  height: 552px;
+}
+.shanyao .img .img-left {
+  width: 452px;
+  height: 452px;
+  float: left;
+  padding-left: 0px;
+}
+.shanyao .img .img-left img {
+  width: 100%;
+}
+.shanyao .img .img-right {
+  width: 600px;
+  height: 552px;
+  float: left;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.shanyao .img .img-right .product-grid-list-item {
+  width: 40%;
+  height: 196px;
+}
+.shanyao .img .img-right .product-grid-list-item a {
+  color: #444;
+  margin: 0px 40px;
+}
+.shanyao .img .img-right .product-grid-list-item img {
+  width: 196px;
+  height: 196px;
+}
+.shanyao .img .img-right .product-grid-list-item .product-item-meta {
+  width: 196px;
+  height: 60px;
+  padding: 8px;
+  transition: opacity 0.2s;
+  text-align: left;
+  display: block;
+  padding-left: 38px;
+}
+.shanyao .img .img-right .product-grid-list-item .product-item-meta .product-item-name {
+  font-family: Microsoft YaHei, 微软雅黑, SimHei, 黑体, PingFang SC, 萍方, Noto Sans, Gill Sans, Gill Sans MT, Calibri, serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 4px 0px;
+}
+.shanyao .img .img-right .product-grid-list-item .product-item-meta .product-item-price {
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.xiangshui {
+  margin: 0 auto;
+}
+.xiangshui img {
+  border: 0;
+  display: block;
+  height: auto;
+  left: 0;
+  opacity: 1;
+  padding-left: 0px;
+  transition: opacity 0.2s ease-in-out;
+  width: 100%;
+}
+
+.bot-text {
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+}
+.bot-text .box {
+  width: 1064px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 0px 108px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-around;
+}
+.bot-text .box .help-col {
+  width: 445px;
+  min-height: 145px;
+  box-sizing: border-box;
+  margin: 40px auto;
+  padding: 0px 84px;
+  text-align: center;
+  color: #444;
+}
+.bot-text .box .help-col .help-wenti {
+  margin: 5px auto 12px;
+}
+.bot-text .box .help-col a {
+  color: #444;
+  border-bottom: 1px solid #444;
+}
+.bot-text .box .help-col a:hover {
+  border-bottom: none;
+}
+.bot-text .box .help-col h2 {
+  padding: 20px 25px 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #444;
+  font-family: Microsoft YaHei, 微软雅黑, SimHei, 黑体, PingFang SC, 萍方, Noto Sans, Gill Sans, Gill Sans MT, Calibri, serif;
+  font-weight: 400;
+}
+.bot-text .box .help-col p {
+  font-size: 10px;
+  font-weight: 200;
+}
+
+footer {
+  width: 100%;
+  background-color: #fff;
+}
+footer .footer {
+  width: 1223px;
+  height: 122px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+footer .footer .footer-subscribe {
+  width: 338px;
+  height: 122px;
+  margin: 0px auto 10px;
+  text-align: center;
+}
+footer .footer .footer-subscribe h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #444;
+  font-family: Microsoft YaHei, 微软雅黑, SimHei, 黑体, PingFang SC, 萍方, Noto Sans, Gill Sans, Gill Sans MT, Calibri, serif;
+  padding-bottom: 7px;
+  line-height: 20px;
+}
+footer .footer .footer-subscribe p {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 20px;
+  font-family: Microsoft YaHei, 微软雅黑, SimHei, 黑体, PingFang SC, 萍方, Noto Sans, Gill Sans, Gill Sans MT, Calibri, serif;
+}
+footer .footer .footer-subscribe button {
+  width: 280px;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 20px 18px;
+  margin: 10px 0px;
+  cursor: pointer;
+  border-radius: 6px;
+  color: white;
+  border: none;
+  text-decoration: none;
+  text-transform: none;
+  background-color: #444;
+}
+footer .lists {
+  width: 1223px;
+  height: 290px;
+  margin: 0 auto;
+  padding: 0px 108px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .lists p {
+  font-size: 18px;
+  color: #444;
+  margin-left: 0;
+  letter-spacing: 0;
+  font-family: Microsoft YaHei, 微软雅黑, SimHei, 黑体, PingFang SC, 萍方, Noto Sans, Gill Sans, Gill Sans MT, Calibri, serif;
+  font-weight: 400;
+}
+footer .lists li {
+  font-size: 12px;
+  font-weight: 200;
+  color: #444;
+  margin: 10px 0px;
+  font-family: Microsoft YaHei, 微软雅黑, SimHei, 黑体, PingFang SC, 萍方, Noto Sans, Gill Sans, Gill Sans MT, Calibri, serif;
+}
+footer .footer-right {
+  width: 1064px;
+  height: 53px;
+  margin: 0 auto;
+  font-size: 8px;
+  font-weight: 200;
+  color: #444;
+  border-top: 1px solid #e5e5e5;
+  font-family: Microsoft YaHei, 微软雅黑, SimHei, 黑体, PingFang SC, 萍方, Noto Sans;
+  color: #444;
+}
+footer .footer-right .p1 {
+  width: 1064px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+footer .footer-right .p1 .box1 {
+  color: #444;
+}
+footer .footer-right .p1 .box1 a {
+  border-bottom: 1px solid #444;
+}
+footer .footer-right .p1 .box1 span {
+  margin: 0px 15px;
+}
+footer .footer-right .p1 a:hover {
+  border: none;
+}
+footer .footer-right .p1 .box2 img {
+  width: 24px;
+  height: 24px;
+  margin: 0px 5px;
+}
+footer .footer-right .p2 {
+  color: #444;
+  font-size: 8px;
+  font-weight: 200;
+}
+footer .footer-right .p2 a {
+  border-bottom: 1px solid #444;
+  margin-right: 10px;
+}
+footer .footer-right .p2 a:hover {
+  border: none;
+}
+footer .footer-logo {
+  width: 100%;
+  height: 150px;
+  margin: 0px auto;
+  background-color: white;
+  padding-top: 50px;
+}
+footer .footer-logo .img {
+  text-align: center;
+}
+
+.louti {
+  position: fixed;
+  z-index: 99;
+  right: 10px;
+  top: 100px;
+}
+.louti .lists li {
+  font-size: 12px;
+  color: #444;
+  text-align: center;
+  line-height: 30px;
+  width: 60px;
+  height: 30px;
+  background-color: rgba(216, 202, 172, 0.356);
+  border-radius: 10px;
+  margin: 20px 20px;
+}
+.louti .lists li:hover {
+  background-color: rgba(216, 202, 172, 0.952);
+  cursor: pointer;
+}
+.louti .lists .active {
+  background-color: rgba(218, 193, 139, 0.884);
+}
+
+.container1 {
+  width: 1024px;
+  height: 600px;
+  margin: 0 auto;
+}
+.container1 .swiper-slide {
+  width: 1024px;
+  height: 600px;
+}
+.container1 .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.container1 .swiper-button-next, .container1 .swiper-button-prev {
+  width: 80px;
+  height: 0px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 80px;
+  background-color: rgba(188, 143, 143, 0.192);
+  color: #fff;
+  opacity: 0.1;
+}
+.container1 .swiper-button-next:hover {
+  color: #fff;
+  opacity: 0.7;
+}
+.container1 .swiper-button-prev:hover {
+  color: #fff;
+  opacity: 0.7;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.zhuce {
+  display: none;
+  overflow-y: scroll;
+  position: fixed;
+  z-index: 101;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(68, 68, 68, 0.23);
+}
+.zhuce .user-name {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 80%;
+  height: 100%;
+  max-width: 456px;
+  background-color: white;
+}
+.zhuce .user-name .tray-content {
+  width: 258px;
+  height: 640px;
+  margin: 0 auto;
+  padding: 40px 0px;
+}
+.zhuce .user-name .tray-content .tray-header {
+  margin-bottom: 20px;
+  visibility: inherit;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 200;
+  font-family: "Microsoft YaHei", 微软雅黑, SimHei, 黑体, "PingFang SC", 萍方, "Noto Sans";
+}
+.zhuce .user-name .tray-content .form-group {
+  margin: 4px 0px;
+}
+.zhuce .user-name .tray-content .form-group .form-control {
+  width: 100%;
+  margin: 4px 0px;
+  border: 1px solid gainsboro;
+  color: rgba(68, 68, 68, 0.23);
+}
+.zhuce .user-name .tray-content .yangshi {
+  font-size: 10px;
+  font-weight: 400;
+  color: #444444;
+}
+.zhuce .user-name .tray-content .yangshi span {
+  font-weight: 200;
+  border-bottom: 1px solid #444;
+  margin-left: 200px;
+  cursor: pointer;
+}
+.zhuce .user-name .tray-content .yangshi span:hover {
+  border-bottom: none;
+}
+.zhuce .user-name .tray-content .tishi {
+  margin: 8px 0px;
+  font-size: 10px;
+  font-weight: 200;
+}
+.zhuce .user-name .tray-content .btn {
+  border: none;
+  width: 257px;
+  height: 40px;
+  background-color: #444444;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 40px;
+  font-size: 12px;
+}
+.zhuce .user-name .tray-content .huo {
+  width: 100%;
+  height: 8px;
+  position: relative;
+  font-size: 10px;
+  color: #444444;
+  display: flex;
+  border-bottom: 1px solid #d5d5d5;
+  margin: 25px 0px;
+}
+.zhuce .user-name .tray-content .huo p {
+  position: absolute;
+  left: 112px;
+  padding: 0px 10px;
+  margin: auto;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+}
+.zhuce .user-name .tray-content #btn1 {
+  border: none;
+  width: 257px;
+  height: 40px;
+  background-color: #444444;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 12px;
+}
+.zhuce .user-name .tray-content .chuangjian {
+  width: 100%;
+  margin: 10px 0px;
+}
+.zhuce .user-name .tray-content .chuangjian ul li {
+  list-style: square;
+  font-size: 10px;
+  font-weight: 400;
+  color: #444;
+  line-height: 18px;
+  font-family: "Microsoft YaHei", 微软雅黑, SimHei, 黑体, "PingFang SC", 萍方, "Noto Sans";
+}
+
+.zhuce.active {
+  display: block;
+}
+
+.left-mulu.active {
+  display: block;
+}
+
+.left-mulu {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(68, 68, 68, 0.295);
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  overflow-x: hidden;
+  display: none;
+}
+.left-mulu .ul {
+  width: 410px;
+  height: 743px;
+  padding: 60px;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-weight: 400;
+  font-family: "Microsoft YaHei", 微软雅黑, SimHei, 黑体, "PingFang SC", 萍方, "Noto Sans";
+}
+.left-mulu .ul h3 {
+  font-size: 22px;
+  font-weight: 200;
+  cursor: pointer;
+}
+.left-mulu .ul a {
+  color: #444;
+}
+.left-mulu .ul a li {
+  cursor: pointer;
+  width: 310px;
+  height: 20px;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px;
+}
+.left-mulu .ul .guanyu {
+  width: 310px;
+  height: 20px;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+.left-mulu .ul .guanyu :first-child {
+  width: 270px;
+  padding-top: 10px;
+  border-top: 1px solid gray;
+}

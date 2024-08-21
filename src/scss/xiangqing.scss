@@ -1,0 +1,61 @@
+@import "./_header.scss";
+@import "./_biaoti.scss";
+@import "./bot-text";
+@import "./footer";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// .all {
+//     a{
+//         text-decoration: none;
+//         color: #444;
+//     }
+//     width: 1124px;
+//     margin: 0 auto;
+//     // height: 100px;
+//     background-color: red;
+//     .right-box {
+//         width: 1124px;
+//         background-color: yellow;
+//         position: relative;
+//         .right-box-header {
+//             width: 1124px;
+//             height: 40px;
+//             background-color: greenyellow;
+//             line-height: 40px;
+//             display: flex;
+//             justify-content: space-between;
+//             .header-left {
+//                 width: 162px;
+//                 height: 40px;
+//             }
+//             .header-right {
+//                 width: 260px;
+//                 height: 40px;
+//                 display: flex;
+//             }
+//         }
+//         .right-bot {
+//             width: 1124px;
+//             min-height: 800px;
+//             .pic{
+//                 width: 180px;
+//                 float: left;
+//                 margin-right: 20px;
+//                 .tu{
+//                     width: 180px;
+//                     img{
+//                        width:  100%
+//                     }
+//                 }
+//                 tex{
+//                     width: 180px;
+//                     height: auto;
+//                 }
+                
+//             }
+//         }
+//     }
+// }

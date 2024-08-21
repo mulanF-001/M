@@ -1,0 +1,47 @@
+// 大图文本
+.block-edito {
+    width: 1024px;
+    height: 245px;
+    margin: 0 auto;
+    padding: 60px 120px 40px 120px;
+    margin: 0px 100px;
+    text-align: center;
+    // 标题
+    .editorial-block-title {
+        font-size: 28px;
+        line-height: 30px;
+        color: #444;
+        font-weight: 400;
+        margin: 0 0 20px -2px;
+        font-family: Orator W01, Microsoft YaHei, å¾®è½¯é›…é»‘, PingFang SC, èæ–¹, Noto Sans, SimHei, é»‘ä½“, Gill Sans,
+            Gill Sans MT, Calibri, serif;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+    // 标题详情
+    .editorial-block-intro,
+    .intro-btn {
+        color: #444;
+        margin: 16px 0px;
+        padding: 0px 1px;
+        font-size: 16px;
+        height: 46px;
+        line-height: 22px;
+        font-family: Courier New, Microsoft YaHei, å¾®è½¯é›…é»‘, PingFang SC, èæ–¹, Noto Sans, SimHei, é»‘ä½“, monospace;
+        overflow-wrap: break-word;
+        .intro-btn {
+            width: auto;
+            height: auto;
+            background: none;
+            border: none;
+            cursor: pointer;
+            span {
+                border-bottom: 1px solid #444;
+            }
+        }
+        .intro-btn:hover u{
+            text-decoration:none
+        }
+    }
+}
+

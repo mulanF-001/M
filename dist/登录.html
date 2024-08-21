@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/hermes.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <script src="./javascripts/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- 登录页面 -->
+    <div class="zhuce" style="display: block;">
+        <!-- 信息部分 -->
+        <div class="user-name user">
+            <div class="tray-content">
+                <div class="container">
+                    <div id="login_tip" class="alert alert-success">这是一个提示</div>
+                    <form action="javascript:void(0)" class="form-horizontal col-md-4 col-md-offset-4">
+                        <h2 class="tray-header iconfont icon-cuo form-signin-heading">账户</h2>
+                        <div class="tishi form-group">
+                            <label for="username" class="control-label">*为必填项目</label><br>
+                            <label for="username" class="control-label">用户名*</label>
+                            <input type="text" class="form-control" id="username" autocomplete="off" value="wuyanzu3">
+
+                        </div>
+                        <div class="form-group yangshi">
+                            <label for="password" class="yangshi contral-label">密码*</label>
+                            <span></span>
+                            <input type="text" class="form-control" id="password" value="123456">
+                        </div>
+                        <div class="form-group yangshi">
+                            <label for="rpassword" class="contral-label">确认密码*</label>
+                            <span>显示</span>
+                            <input type="text" class="form-control" id="rpassword" value="123456">
+                        </div>
+
+
+                        <button id="btn" class="btn btn-primary btn-sm">登录</button>
+                    </form>
+                </div>
+                <div class="huo">
+                    <p>或</p>
+                </div>
+                <button id="btn1" class="btn-primary btn-sm">创建账户</button>
+                <div class="chuangjian">
+                    <ul>
+                        <p>通过您的账户，您可以：</p>
+                        <li>查看购物袋</li>
+                        <li>查看您的所有订单和下载销售单据</li>
+                        <li>管理您的地址簿</li>
+                        <li>更新您的个人资料</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- 楼梯 -->
+    <div class="louti">
+        <ul class="lists">
+            <li>回到顶部</li>
+            <li>匠心之作</li>
+            <li>经典再现</li>
+            <li>闪耀功能</li>
+            <li>Jardins</li>
+            <li>茵茵绿毯</li>
+            <li>标志饰钉</li>
+            <li>精彩前行</li>
+            <li>皮革工坊</li>
+            <li>回到底部</li>
+        </ul>
+    </div>
+    <!-- 头部样式 -->
+    <div class="header content">
+        <div class="warpper">
+            <ul class="header-list">
+                <li>中国内地</li>
+                <li>爱马仕专卖店</li>
+                <li>联系我们</li>
+            </ul>
+        </div>
+        <div class="page-header">
+            <ul class="logo">
+                <li id="li-icon" class="iconfont icon-shouqi-01">
+                    <span class="mulu">目录</span>
+                </li>
+                <!-- 搜索框+logo图片 -->
+                <li>
+                    <div class="header-search">
+                        <div class="sousuo">
+                            <button class="btn iconfont icon-fangdajing"></button>
+                            <!-- <span class="iconfont icon-fangdajing"></span> -->
+                            <input type="text" placeholder="搜索">
+                        </div>
+                        <img src="https://www.hermes.cn/sites/all/themes/custom/hermes/img/hermes-logo.svg" alt="">
+                    </div>
+                </li>
+                <!-- 账户 -->
+                <li class="user">
+                    <button class=" user-name user-name-top iconfont icon-wode">
+                        <span>账户</span>
+                    </button>
+                </li>
+                <!-- 购物袋 -->
+                <li class="car">
+                    <button class=" user-car iconfont icon-gouwuche">
+                        <span>购物袋</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 轮播上方文本部分 -->
+    <section class="block-edito block-edito-vertical block-edito-horizontal-standard block-edito-text "
+        data-track-text-blocks>
+        <h2 class="editorial-block-title">2021秋冬男装系列</h2>
+
+        <p class="editorial-block-intro">本季系列在不同视角、造型和材质之间另辟蹊径。打破室内与户外风格的界限，勾勒全新轮廓。爱马仕男士昂然前行，散发自在优雅风采。</p>
+
+        <p class="editorial-block-intro">
+            <cta class="cta-placeholder" data-track-editorial-cta="">
+
+                <button class="intro-btn"><u>跟上步调</u></button>
+            </cta>
+        </p>
+    </section>
+    <!--  轮播图 -->
+    <div class="swiper-container container1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./img/2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/1.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/3.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/4.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/5.png" alt="">
+            </div>
+        </div>
+        <!-- 左右按钮 -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- jQuery分页器 -->
+        <!-- <div class="swiper-pagination"></div> -->
+    </div>
+    <!-- 匠心之作 -->
+    <section class="content duotu">
+        <!-- 文本 -->
+
+        <div class="block-text">
+            <p class="editorial-block-title">
+                匠心之作
+            </p>
+
+        </div>
+        <ul class="duotu-img">
+            <li>
+                <img src="https://assets.hermes.cn/is/image/hermesedito/P_11_CH_WRTW_167565HA0T?fmt=webp&fit=wrap,0&wid=460&qlt=40"
+                    alt="">
+                <p>男士成衣</p>
+            </li>
+            <li>
+                <img src="https://assets.hermes.cn/is/image/hermesedito/P_11_CH_FRAGRANCES_101561V0?fmt=webp&fit=wrap,0&wid=460&qlt=40"
+                    alt="">
+                <p>香水</p>
+
+            </li>
+            <li>
+                <img src="https://assets.hermes.cn/is/image/hermesedito/P_11_CH_HOME_313017M03?fmt=webp&fit=wrap,0&wid=460&qlt=40"
+                    alt="">
+                <p>家居</p>
+
+            </li>
+            <li>
+                <img src="https://assets.hermes.cn/is/image/hermesedito/P_11_CH_WATCH_053222WW00?fmt=webp&fit=wrap,0&wid=460&qlt=40"
+                    alt="">
+                <p>钟表</p>
+
+            </li>
+            <li>
+                <img src="https://assets.hermes.cn/is/image/hermesedito/P_11_CH_BAGS_082658CK37?fmt=webp&fit=wrap,0&wid=460&qlt=40"
+                    alt="">
+                <p>包袋</p>
+
+            </li>
+            <li>
+                <img src="https://assets.hermes.cn/is/image/hermesedito/P_11_CH_SLG_075352CAR2?fmt=webp&fit=wrap,0&wid=460&qlt=40"
+                    alt="">
+                <p>皮质配饰</p>
+
+            </li>
+            <li>
+                <img src="https://assets.hermes.cn/is/image/hermesedito/P_11_CH_MFASHJEW_113701B00?fmt=webp&fit=wrap,0&wid=460&qlt=40"
+                    alt="">
+                <p>时尚首饰</p>
+
+            </li>
+            <li>
+                <img src="https://assets.hermes.cn/is/image/hermesedito/P_11_CH_PETITH_106593892?fmt=webp&fit=wrap,0&wid=460&qlt=40"
+                    alt="">
+                <p>Petit H</p>
+
+            </li>
+        </ul>
+
+    </section>
+    <!-- 经典再现 -->
+    <section class="content jingdian">
+        <div class="field-item even">经典再现</div>
+        <p>季节更替，家居系列历久弥新。家具到灯具，织物到游戏，摆件到餐瓷，以功能性为出发点决定造型与材质，不断挑战工艺极限。</p>
+        <div class="tiaozhuan">
+            <a href="https://www.baidu.com/">重塑自我！</a>
+        </div>
+        <div class="lazyloaded">
+            <img src="https://assets.hermes.cn/is/image/hermesedito/P_169_Maison_2021_2?fmt=webp&fit=wrap,0&wid=1460&qlt=40"
+                alt="">
+        </div>
+    </section>
+
+    <!-- 闪耀功能 -->
+    <section class="content shanyao">
+        <div class="wenben">
+            <div class="field-item even">闪耀功能</div>
+            <p>夜幕欢聚、月下野餐、静心阅读，每到一处，都有一盏灯在等候……</p>
+            <div class="tiaozhuan">
+                <a href="https://www.baidu.com/">点亮奇思</a>
+            </div>
+        </div>
+
+        <div class="img">
+            <div class="img-left">
+                <img src="https://assets.hermes.cn/is/image/hermesedito/P_11_Maison_2021_6?fmt=webp&fit=wrap,0&wid=928&qlt=40"
+                    alt="">
+            </div>
+            <!-- 闪耀功能商品区 -->
+            <ul class="img-right">
+                <li class="product-grid-list-item ">
+                    <a href="https://baidu.com">
+                        <img src="https://assets.hermes.cn/is/image/hermesproduct/311572M+01_set?a=a&size=3000,3000&extend=300,300,300,300&align=0,1&$product_item_grid_b$&resMode=&fmt=webp&wid=1300&hei=1300"
+                            alt="矮瓶">
+                        <div class="product-item-meta">
+                            <div class="product-item-name">Perimetre矮瓶</div>
+                            <div class="product-item-price">￥4,850.00</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-grid-list-item ">
+                    <a href="https://baidu.com">
+                        <img src="https://assets.hermes.cn/is/image/hermesproduct/313017M+02_set?a=a&size=3000,3000&extend=300,300,300,300&align=0,1&$product_item_grid_b$&resMode=&fmt=webp&wid=1300&hei=1300"
+                            alt="矮瓶">
+                        <div class="product-item-meta">
+                            <div class="product-item-name">Perimetre矮瓶</div>
+                            <div class="product-item-price">￥4,000.00</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-grid-list-item ">
+                    <a href="https://baidu.com">
+                        <img src="https://assets.hermes.cn/is/image/hermesproduct/313103M+01_set?a=a&size=3000,3000&extend=0,0,0,0&align=0,1&$product_item_grid_b$&resMode=&fmt=webp&wid=1300&hei=1300"
+                            alt="矮瓶">
+                        <div class="product-item-meta">
+                            <div class="product-item-name">Perimetre矮瓶</div>
+                            <div class="product-item-price">￥4,400.00</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-grid-list-item ">
+                    <a href="https://baidu.com">
+                        <img src="https://assets.hermes.cn/is/image/hermesproduct/311523M+01_set?a=a&size=3000,3000&extend=300,300,300,300&align=0,1&$product_item_grid_b$&resMode=&fmt=webp&wid=1300&hei=1300"
+                            alt="矮瓶">
+                        <div class="product-item-meta">
+                            <div class="product-item-name">Perimetre矮瓶</div>
+                            <div class="product-item-price">￥9,650.00</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Collection Parfums-Jardins -->
+    <section class="content jingdian xiangshui">
+        <div class="field-item even">Collection Parfums-Jardins</div>
+        <p>爱马仕花园香水系列，诞生依水而生的多采元素。</p>
+        <div class="tiaozhuan">
+            <a href="https://www.baidu.com/">探索系列！</a>
+        </div>
+        <div class="lazyloaded">
+            <img src="https://assets.hermes.cn/is/image/hermesedito/P_169_JAR_EDITO_OPTION_1?fmt=webp&fit=wrap,0&wid=1460&qlt=40"
+                alt="">
+        </div>
+
+    </section>
+
+    <!-- 茵茵绿毯区 -->
+    <section class="content shanyao lvtan">
+        <div class="wenben">
+            <div class="field-item even">茵茵绿毯</div>
+            <p>平衡于黄蓝之间，光点在碧草与绿叶间舞动。</p>
+            <div class="tiaozhuan">
+                <a href="https://www.baidu.com/">维罗纳绿或竹绿色？</a>
+            </div>
+        </div>
+
+        <div class="img">
+            <div class="img-left">
+                <img src="https://assets.hermes.cn/is/image/hermesedito/P_11_GREEN_2021?fmt=webp&fit=wrap,0&wid=928&qlt=40"
+                    alt="">
+            </div>
+
+            <ul class="img-right">
+                <li class="product-grid-list-item ">
+                    <a href="https://baidu.com">
+                        <img src="https://assets.hermes.cn/is/image/hermesproduct/211861ZHLN_set?a=a&size=3000,3000&extend=300,300,300,300&align=0,1&$product_item_grid_b$&resMode=&fmt=webp&wid=1300&hei=1300"
+                            alt="矮瓶">
+                        <div class="product-item-meta">
+                            <div class="product-item-name">Perimetre矮瓶</div>
+                            <div class="product-item-price">￥4,850.00</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-grid-list-item ">
+                    <a href="https://baidu.com">
+                        <img src="https://assets.hermes.cn/is/image/hermesproduct/078383CK6O_set?a=a&size=3000,3000&extend=300,300,300,300&align=0,1&$product_item_grid_b$&resMode=&fmt=webp&wid=1300&hei=1300"
+                            alt="矮瓶">
+                        <div class="product-item-meta">
+                            <div class="product-item-name">Perimetre矮瓶</div>
+                            <div class="product-item-price">￥4,000.00</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-grid-list-item ">
+                    <a href="https://baidu.com">
+                        <img src="https://assets.hermes.cn/is/image/hermesproduct/036201T+04_set?a=a&size=3000,3000&extend=0,0,0,0&align=0,1&$product_item_grid_b$&resMode=&fmt=webp&wid=1300&hei=1300"
+                            alt="矮瓶">
+                        <div class="product-item-meta">
+                            <div class="product-item-name">Perimetre矮瓶</div>
+                            <div class="product-item-price">￥4,400.00</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-grid-list-item ">
+                    <a href="https://baidu.com">
+                        <img src="https://assets.hermes.cn/is/image/hermesproduct/beltkit-32?$leatherstrap=073967CAAZ_composite_2&$buckle=064550CC06_front_1&extend=307,307,307,307&align=0,1&$product_item_grid_b$&resMode=&fmt=webp&wid=1300&hei=1300"
+                            alt="矮瓶">
+                        <div class="product-item-meta">
+                            <div class="product-item-name">Perimetre矮瓶</div>
+                            <div class="product-item-price">￥9,650.00</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 标志饰钉区域 -->
+    <section class="content jingdian biaozhi">
+        <div class="field-item even">标志饰钉</div>
+        <p>饰钉与圆环现身皮革，重新演绎标志性的Collier de chien元素。这款凉鞋将金属与皮革结合，灵感来自于60年代的前卫风格。本季不可或缺的时尚鞋履。</p>
+        <div class="tiaozhuan">
+        </div>
+        <div class="lazyloaded">
+            <img src="https://assets.hermes.cn/is/image/hermesedito/P_169_SHOES_FW21_2?fmt=webp&fit=wrap,0&wid=1280&qlt=40"
+                alt="">
+        </div>
+    </section>
+
+    <!-- 精彩前行区域 -->
+    <section class="content shanyao">
+        <div class="wenben">
+            <div class="field-item even">精彩前行</div>
+            <p>秋冬鞋履系列，邀您在柔和材质、运动灵感和温暖色调之中，漫步一季。</p>
+            <div class="tiaozhuan">
+                <a href="https://www.baidu.com/">步履潇洒</a>
+            </div>
+        </div>
+
+        <div class="img">
+            <div class="img-left">
+                <img src="https://assets.hermes.cn/is/image/hermesedito/P_11_SHOES_FW21_8?fmt=webp&fit=wrap,0&wid=928&qlt=40"
+                    alt="">
+            </div>
+            <!-- 闪耀功能商品区 -->
+            <ul class="img-right">
+                <li class="product-grid-list-item ">
+                    <a href="https://baidu.com">
+                        <img src="https://assets.hermes.cn/is/image/hermesproduct/212049Z+90_set?a=a&size=3000,3000&extend=300,300,300,300&align=0,1&$product_item_grid_b$&resMode=&fmt=webp&wid=1300&hei=1300"
+                            alt="矮瓶">
+                        <div class="product-item-meta">
+                            <div class="product-item-name">Devise凉鞋</div>
+                            <div class="product-item-price">￥4,850.00</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-grid-list-item ">
+                    <a href="https://baidu.com">
+                        <img src="https://assets.hermes.cn/is/image/hermesproduct/212174Z+9M_set?a=a&size=3000,3000&extend=300,300,300,300&align=0,1&$product_item_grid_b$&resMode=&fmt=webp&wid=1300&hei=1300"
+                            alt="矮瓶">
+                        <div class="product-item-meta">
+                            <div class="product-item-name">Oran凉鞋</div>
+                            <div class="product-item-price">￥4,000.00</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-grid-list-item ">
+                    <a href="https://baidu.com">
+                        <img src="https://assets.hermes.cn/is/image/hermesproduct/211172Z+02_set?a=a&size=3000,3000&extend=300,300,300,300&align=0,1&$product_item_grid_b$&resMode=&fmt=webp&wid=1300&hei=1300"
+                            alt="矮瓶">
+                        <div class="product-item-meta">
+                            <div class="product-item-name">Oran凉鞋</div>
+                            <div class="product-item-price">￥4,400.00</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-grid-list-item ">
+                    <a href="https://baidu.com">
+                        <img src="https://assets.hermes.cn/is/image/hermesproduct/311523M+01_set?a=a&size=3000,3000&extend=300,300,300,300&align=0,1&$product_item_grid_b$&resMode=&fmt=webp&wid=1300&hei=1300"
+                            alt="矮瓶">
+                        <div class="product-item-meta">
+                            <div class="product-item-name">Oran凉鞋</div>
+                            <div class="product-item-price">￥9,650.00</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 皮革工坊区域 -->
+    <section class="content jingdian pige">
+        <div class="field-item even">法国Fitilieu与Val-de-Reuil皮革工坊</div>
+        <p>爱马仕培训来自不同背景的新一代工匠投身皮革工艺，加强皮革工坊的多元化和多样性。</p>
+        <div class="tiaozhuan">
+            <a href="https://www.baidu.com/">了解更多</a>
+
+        </div>
+        <div class="lazyloaded">
+            <img src="https://assets.hermes.cn/is/image/hermesedito/P_169__RSE_FORMATION_COVER?fmt=webp&fit=wrap,0&wid=1280&qlt=40"
+                alt="">
+        </div>
+    </section>
+
+    <!-- 底部文本区域 -->
+    <section class="bot-text content">
+        <div class="box">
+            <div class="help-col">
+                <h2>需要帮助吗</h2>
+                <div class="help-wenti">
+                    <p> 您或许可以在<a href="https://baidu.com"><span>常见问题</span></a>中找到答案</p>
+                    <p>也可以联系我们：</p>
+                </div>
+                <p><a href="https://baidu.com">客服中心 400 090 6610</a></p>
+                <p>周一至周日: 10点 - 22点</p>
+            </div>
+
+            <div class="help-col">
+                <h2>查询附近的店</h2>
+                <div class="help-wenti">
+                    <p> <a href="https://baidu.com"><span>爱马仕专卖店</span></a></p>
+                </div>
+                <p><a href="https://baidu.com">销售美妆产品的专卖店</a></p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-subscribe">
+                <h2>及时得到最新资讯</h2>
+                <p>订阅爱马仕电子报，探索我们的故事、产品和每一次惊喜。</p>
+                <button>订阅</button>
+
+            </div>
+        </div>
+        <div class="lists">
+
+            <div>
+                <p>服务</p>
+                <ul>
+                    <a href="https://baidu.com">
+                        <li>联系我们</li>
+                    </a>
+                    <a href="https://baidu.com">
+                        <li>常见问题</li>
+                    </a>
+                    <a href="https://baidu.com">
+                        <li>爱马仕专卖店</li>
+                    </a>
+                    <a href="https://baidu.com">
+                        <li>销售美妆产品的专卖店</li>
+                    </a>
+                    <a href="https://baidu.com">
+                        <li>礼物</li>
+                    </a>
+                    <a href="https://baidu.com">
+                        <li>高级定制</li>
+                    </a>
+                    <a href="https://baidu.com">
+                        <li>保养与修复</li>
+                    </a>
+                </ul>
+            </div>
+            <!-- 2 -->
+            <div>
+                <p>购物帮助</p>
+                <ul>
+                    <a href="https://baidu.com">
+                        <li>付款</li>
+                    </a>
+                    <a href="https://baidu.com">
+                        <li>配送</li>
+                    </a>
+                    <a href="https://baidu.com">
+                        <li>专卖店取货</li>
+                    </a>
+                    <a href="https://baidu.com">
+                        <li>物流查询</li>
+                    </a>
+                    <a href="https://baidu.com">
+                        <li>换货及退货</li>
+                    </a>
+
+                </ul>
+            </div>
+            <!-- 3 -->
+            <div>
+                <p>爱马仕品牌</p>
+                <ul>
+                    <a href="https://baidu.com">
+                        <li>可持续发展</li>
+                    </a>
+                    <a href="https://baidu.com">
+                        <li>加入爱马仕</li>
+                    </a>
+                    <a href="https://baidu.com">
+                        <li>财务 &amp; 管理 </li>
+                    </a>
+                    <a href="https://baidu.com">
+                        <li>爱马仕基金会</li>
+                    </a>
+                    <a href="https://baidu.com">
+                        <li>集团旗下其他品牌</li>
+                    </a>
+
+                </ul>
+            </div>
+            <!-- 4 -->
+            <div>
+                <p>法律信息</p>
+                <ul>
+                    <a href="https://baidu.com">
+                        <li>法律条款</li>
+                    </a>
+                    <a href="https://baidu.com">
+                        <li>隐私政策</li>
+                    </a>
+                    <a href="https://baidu.com">
+                        <li>法律声明</li>
+                    </a>
+                    <a href="https://baidu.com">
+                        <li>约束性企业政策</li>
+                    </a>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+            <div class="p1">
+                <div class="box1">
+                    <a href="http://baidu.com">中国内地</a>
+                    <span>© 爱马仕 2021 版权所有</span>
+                </div>
+                <div class="box2">
+                    <img src="https://timeclub.danielwellington.cn/assets/img/icons/wechat_icon.svg" alt="">
+                    <img src="https://timeclub.danielwellington.cn/assets/img/icons/sina_icon.svg" alt="">
+                </div>
+            </div>
+            <div class="p2">
+                <div class="box1">
+                    <a href="http://baidu.com">
+                        <img src="https://www.hermes.cn/sites/all/themes/custom/hermes/img/china-license.png" alt="">
+                        <span>电子营业执照</span>
+                    </a>
+                    <a href="http://baidu.com">
+                        <img src="https://www.hermes.cn/sites/all/themes/custom/hermes/img/china-network-security.png"
+                            alt="">
+                        <span>沪公网安备 31010602002693号</span>
+                    </a>
+                    <a href="http://baidu.com">
+                        <span>沪ICP备17032469号-2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-logo">
+            <div class="img"><img src="https://www.hermes.cn/sites/all/themes/custom/hermes/img/hermes-logo.svg" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./javascripts/animate.js"></script>
+    <script src="./javascripts/jQuery.js"></script>
+    <script src="./javascripts/lunbotu.js"></script>
+    <script src="./javascripts/louti.js"></script>
+    <!-- 登录页面js -->
+    <script src="./javascripts/ajax-promise.js"></script>
+    <script src="./javascripts/cookie.js"></script>
+    <!-- <script src="./javascripts/denglu.js"></script> -->
+    <script src="./javascripts/zhuce.js"></script>
+       
+</body>
+
+</html>

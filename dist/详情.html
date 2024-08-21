@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            list-style-type: none;
+        }
+
+        .container {
+            min-width: 450px;
+            min-height: 800px;
+            /* background-color: red; */
+            margin-left: 80px;
+            position: relative;
+        }
+
+        .miaoshu {
+            float: right;
+        }
+
+        .small-img {
+            width: 450px;
+            height: 450px;
+
+        }
+
+        .small-img img {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .focus {
+            width: 300px;
+            height: 300px;
+            background: #FEDE4F;
+            opacity: 0.5;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+        }
+
+        .big-img {
+            position: absolute;
+            left: 450px;
+            top: 0;
+            width: 500px;
+            height: 500px;
+            overflow: hidden;
+            display: none;
+        }
+
+        .big-img img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 750px;
+            height: 750px;
+        }
+
+        .img-list {
+            width: 450px;
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .img-list li {
+            width: 20%;
+
+        }
+
+        li img {
+            width: 100%;
+        }
+
+        li img:hover {
+            cursor: pointer;
+            box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.13), 0px 3px 9px 0px rgba(0, 0, 0, 0.19);
+            border-bottom: 2px solid #444;
+        }
+
+        .miaoshu {
+            width: 375px;
+            min-height: 485px;
+            background-color: #fffcf7;
+            font-family: PingFang SC, 萍方, Noto Sans, Microsoft YaHei, 微软雅黑, SimHei, 黑体, Helvetica W01, Helvetica Neue, sans-serif;
+            color: #444;
+            font-weight: 200;
+            line-height: 30px;
+
+        }
+
+        .miaoshu h1 {
+            font-size: 20px;
+            font-weight: 400;
+            color: #444;
+            padding: 10px 10px;
+            box-sizing: border-box;
+            font-family: PingFang SC, 萍方, Noto Sans, Microsoft YaHei, 微软雅黑, SimHei, 黑体, Orator W01, Gill Sans, Gill Sans MT, Calibri, serif;
+        }
+
+        .miaoshu .jiage {
+            font-size: 12px;
+            line-height: 30px;
+
+        }
+
+        .yanse {
+            color: #444;
+            font-weight: 400;
+            display: flex;
+            justify-content: space-between;
+            line-height: 45px;
+            border-top: 1px solid #f6f1eb;
+            border-bottom: 1px solid #f6f1eb;
+        }
+
+        .yanse p {
+            margin: 0px 10px;
+        }
+
+        .yanse .p1 {
+            color: #000;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .chima {
+            border-top: none;
+        }
+
+        .imgs {
+            width: 100%;
+            /* height: 86px; */
+            border-bottom: 1px solid #f6f1eb;
+
+        }
+
+        .imgs img {
+            width: 56px;
+            height: 56px;
+            margin: 15px 0px;
+            margin-left: 15px;
+        }
+
+        .btn {
+            width: 375px;
+            border-bottom: 1px solid #fffcf7;
+        }
+
+        .btn .wenzi {
+            cursor: pointer;
+            width: 240px;
+            height: 40px;
+            line-height: 40px;
+            margin: 30px auto;
+            border: none;
+            background: #444;
+            color: #fff;
+            font-weight: 600;
+            border-radius: 6px;
+            text-align: center;
+            font-size: PingFang SC, 萍方, Noto Sans, Microsoft YaHei, 微软雅黑, SimHei, 黑体, Courier New, monospace;
+        }
+
+        .quanmian {
+            width: 375px;
+            height: 100%;
+            font-size: 14px;
+            font-family: PingFang SC, 萍方, Noto Sans, Microsoft YaHei, 微软雅黑, SimHei, 黑体, Helvetica W01, Helvetica Neue, sans-serif;
+            font-weight: 400;
+            color: #444;
+        }
+
+        .quanmian p {
+            margin: 15px;
+        }
+
+        .tuijian {
+            width: 721px;
+            height: 356px;
+
+        }
+
+        .tuijian h2 {
+            line-height: 50px;
+            margin-left: 20px;
+        }
+
+        .lists li {
+            width: 180px;
+            height: 238px;
+            float: left;
+            margin: 10px 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="./css/xiangqing.css">
+    <link rel="stylesheet" href="./css/xiangqing2.css">
+    <script src="./javascripts/ajax-promise.js"></script>
+    <!-- <script src="./javascripts/jquery.lazyload.js"></script> -->
+    <script src="./javascripts/jQuery.js"></script>
+
+    <!-- 放大镜 -->
+
+
+    <!-- 吸顶 -->
+    <script>
+
+        window.onscroll = function () {
+            var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+
+            if (scrollTop > 84) {
+                // 让导航元素的position 变成 fixed; 
+                nav.style.position = "fixed";
+            } else {
+                nav.style.position = "static";
+            }
+        }
+    </script>
+  
+
+</head>
+
+<body>
+    <div class="all">
+
+
+        <!-- 头 -->
+        <!-- <div></div> -->
+        <div id="nav" class="header content" style="z-index: 999;">
+            <div class="warpper">
+                <ul class="header-list">
+                    <li>中国内地</li>
+                    <li>爱马仕专卖店</li>
+                    <li>联系我们</li>
+                </ul>
+            </div>
+            <div class="page-header">
+                <ul class="logo">
+                    <li id="li-icon" class="iconfont icon-shouqi-01">
+                        <span class="mulu">目录</span>
+                    </li>
+                    <!-- 搜索框+logo图片 -->
+                    <li>
+                        <div class="header-search">
+                            <div class="sousuo">
+                                <button class="btn iconfont icon-fangdajing"></button>
+                                <!-- <span class="iconfont icon-fangdajing"></span> -->
+                                <input type="text" placeholder="搜索">
+                            </div>
+                            <a href="./首页.html"><img src="https://www.hermes.cn/sites/all/themes/custom/hermes/img/hermes-logo.svg" alt=""></a>
+                        </div>
+                    </li>
+                    <!-- 账户 -->
+                    <li class="user">
+                        <button class=" user-name user-name-top iconfont icon-wode">
+                            <span>账户</span>
+                        </button>
+                    </li>
+                    <!-- 购物袋 -->
+                    <li class="car">
+                        <button class=" user-car iconfont icon-gouwuche">
+                            <span>购物袋</span>
+                        </button>
+                    </li>
+                </ul>
+                <!-- 左边目录 -->
+                
+            </div>
+        </div>
+        <!-- 轮播上方文本部分 -->
+        <section class="block-edito block-edito-vertical block-edito-horizontal-standard block-edito-text "
+            data-track-text-blocks>
+            <h2 class="editorial-block-title">2021秋冬男装系列</h2>
+
+            <p class="editorial-block-intro">本季系列在不同视角、造型和材质之间另辟蹊径。打破室内与户外风格的界限，勾勒全新轮廓。爱马仕男士昂然前行，散发自在优雅风采。</p>
+
+            <p class="editorial-block-intro">
+                <cta class="cta-placeholder" data-track-editorial-cta="">
+
+                    <button class="intro-btn"><u>跟上步调</u></button>
+                </cta>
+            </p>
+        </section>
+
+
+
+
+        <!-- 中间部分 -->
+        <div class="container">
+
+            <div class="miaoshu">
+                <h1>
+                    <p> “H 3D”刺绣T恤 </p>
+                    <p class="jiage">¥4,850 </p>
+                </h1>
+                <div class="yanse">
+                    <p>颜色</p>
+                    <p class="p1">爱马仕橙</p>
+                </div>
+                <div class="imgs">
+                    <div class="img">
+                        <img src="https://assets.hermes.cn/is/image/hermesproduct/%22h-3d%22%E5%88%BA%E7%BB%A3t%E6%81%A4--167610HA30-worn-2-0-0-260-260_b.jpg"
+                            alt="">
+                        <img src="https://assets.hermes.cn/is/image/hermesproduct/%22h-3d%22%E5%88%BA%E7%BB%A3t%E6%81%A4--167610HA65-worn-2-0-0-260-260_b.jpg"
+                            alt="">
+                        <img src="https://assets.hermes.cn/is/image/hermesproduct/%22h-3d%22%E5%88%BA%E7%BB%A3t%E6%81%A4--167610HA90-worn-2-0-0-260-260_b.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="yanse chima">
+                    <p>尺码</p>
+                    <p class="iconfont icon-xiangxia"></p>
+                </div>
+                <div class="btn">
+                    <div class="wenzi">
+                        <p>加入购物袋</p>
+                    </div>
+                </div>
+                <div class="quanmian">
+                    <p>全棉短袖圆领T恤，饰有“H 3D”刺绣（100%棉）。</p>
+                    <p>- “H 3D”刺绣</p>
+                    <p>意大利制造。</p>
+                </div>
+
+            </div>
+            <!-- 小图  -->
+            <div class="small-img">
+                <!-- 焦点 -->
+                <div class="focus"></div>
+                <img src="./images/1.jpg" alt="">
+            </div>
+
+            <!-- 大图 -->
+            <div class="big-img">
+                <img src="./images/1.big.jpg" alt="">
+            </div>
+            <!-- 图片列表 -->
+            <ul class="img-list">
+                <li><img src="./images/1.small.jpg" alt=""></li>
+                <li><img src="./images/2.small.jpg" alt=""></li>
+                <li><img src="./images/3.small.jpg" alt=""></li>
+                <li><img src="./images/4.small.jpg" alt=""></li>
+            </ul>
+            <div class="tuijian">
+                <h2>完美搭配</h2>
+                <ul class="lists">
+                    <li>
+                        <img src="https://assets.hermes.cn/is/image/hermesproduct/102190ZH09_set?a=a&size=3000,3000&extend=300,300,300,300&align=0,1&$product_item_grid_b$=&resMode=&wid=800&hei=800"
+                            alt="">
+                        <h3>Quicker运动鞋</h3>
+                        <p>¥6,600 </p>
+                    </li>
+                    <li>
+                        <img src="https://assets.hermes.cn/is/image/hermesproduct/211925ZH90_set?a=a&size=3000,3000&extend=300,300,300,300&align=0,1&$product_item_grid_b$=&resMode=&wid=800&hei=800"
+                            alt="">
+                        <h3>Quicker运动鞋</h3>
+                        <p>¥6,600 </p>
+                    </li>
+                </ul>
+            </div>
+            <!-- 右边描述 -->
+
+        </div>
+
+
+
+
+
+        <!-- 尾部 -->
+        <!-- <footer></footer> -->
+        <section class="bot-text content">
+            <div class="box">
+                <div class="help-col">
+                    <h2>需要帮助吗</h2>
+                    <div class="help-wenti">
+                        <p> 您或许可以在<a href="https://baidu.com"><span>常见问题</span></a>中找到答案</p>
+                        <p>也可以联系我们：</p>
+                    </div>
+                    <p><a href="https://baidu.com">客服中心 400 090 6610</a></p>
+                    <p>周一至周日: 10点 - 22点</p>
+                </div>
+
+                <div class="help-col">
+                    <h2>查询附近的店</h2>
+                    <div class="help-wenti">
+                        <p> <a href="https://baidu.com"><span>爱马仕专卖店</span></a></p>
+                    </div>
+                    <p><a href="https://baidu.com">销售美妆产品的专卖店</a></p>
+                </div>
+            </div>
+
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="footer-subscribe">
+                    <h2>及时得到最新资讯</h2>
+                    <p>订阅爱马仕电子报，探索我们的故事、产品和每一次惊喜。</p>
+                    <button>订阅</button>
+
+                </div>
+            </div>
+            <div class="lists">
+
+                <div>
+                    <p>服务</p>
+                    <ul>
+                        <a href="https://baidu.com">
+                            <li>联系我们</li>
+                        </a>
+                        <a href="https://baidu.com">
+                            <li>常见问题</li>
+                        </a>
+                        <a href="https://baidu.com">
+                            <li>爱马仕专卖店</li>
+                        </a>
+                        <a href="https://baidu.com">
+                            <li>销售美妆产品的专卖店</li>
+                        </a>
+                        <a href="https://baidu.com">
+                            <li>礼物</li>
+                        </a>
+                        <a href="https://baidu.com">
+                            <li>高级定制</li>
+                        </a>
+                        <a href="https://baidu.com">
+                            <li>保养与修复</li>
+                        </a>
+                    </ul>
+                </div>
+                <!-- 2 -->
+                <div>
+                    <p>购物帮助</p>
+                    <ul>
+                        <a href="https://baidu.com">
+                            <li>付款</li>
+                        </a>
+                        <a href="https://baidu.com">
+                            <li>配送</li>
+                        </a>
+                        <a href="https://baidu.com">
+                            <li>专卖店取货</li>
+                        </a>
+                        <a href="https://baidu.com">
+                            <li>物流查询</li>
+                        </a>
+                        <a href="https://baidu.com">
+                            <li>换货及退货</li>
+                        </a>
+
+                    </ul>
+                </div>
+                <!-- 3 -->
+                <div>
+                    <p>爱马仕品牌</p>
+                    <ul>
+                        <a href="https://baidu.com">
+                            <li>可持续发展</li>
+                        </a>
+                        <a href="https://baidu.com">
+                            <li>加入爱马仕</li>
+                        </a>
+                        <a href="https://baidu.com">
+                            <li>财务 &amp; 管理 </li>
+                        </a>
+                        <a href="https://baidu.com">
+                            <li>爱马仕基金会</li>
+                        </a>
+                        <a href="https://baidu.com">
+                            <li>集团旗下其他品牌</li>
+                        </a>
+
+                    </ul>
+                </div>
+                <!-- 4 -->
+                <div>
+                    <p>法律信息</p>
+                    <ul>
+                        <a href="https://baidu.com">
+                            <li>法律条款</li>
+                        </a>
+                        <a href="https://baidu.com">
+                            <li>隐私政策</li>
+                        </a>
+                        <a href="https://baidu.com">
+                            <li>法律声明</li>
+                        </a>
+                        <a href="https://baidu.com">
+                            <li>约束性企业政策</li>
+                        </a>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-right">
+                <div class="p1">
+                    <div class="box1">
+                        <a href="http://baidu.com">中国内地</a>
+                        <span>© 爱马仕 2021 版权所有</span>
+                    </div>
+                    <div class="box2">
+                        <img src="https://timeclub.danielwellington.cn/assets/img/icons/wechat_icon.svg" alt="">
+                        <img src="https://timeclub.danielwellington.cn/assets/img/icons/sina_icon.svg" alt="">
+                    </div>
+                </div>
+                <div class="p2">
+                    <div class="box1">
+                        <a href="http://baidu.com">
+                            <img src="https://www.hermes.cn/sites/all/themes/custom/hermes/img/china-license.png"
+                                alt="">
+                            <span>电子营业执照</span>
+                        </a>
+                        <a href="http://baidu.com">
+                            <img src="https://www.hermes.cn/sites/all/themes/custom/hermes/img/china-network-security.png"
+                                alt="">
+                            <span>沪公网安备 31010602002693号</span>
+                        </a>
+                        <a href="http://baidu.com">
+                            <span>沪ICP备17032469号-2</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <div class="img"><img src="https://www.hermes.cn/sites/all/themes/custom/hermes/img/hermes-logo.svg"
+                        alt="">
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- 放大镜 -->
+    <script>
+        function Magnifier() {
+            this.small_img_ele = document.querySelector(".small-img")
+            this.small_img = document.querySelector(".small-img img")
+            this.big_img_ele = document.querySelector(".big-img")
+            this.big_img = document.querySelector(".big-img img")
+            this.focus_ele = document.querySelector(".focus")
+            this.container_ele = document.querySelector(".container")
+            this.bigimg = document.querySelector(".big-img img")
+            this.img_li = document.querySelectorAll(".img-list li")
+            this.container_offset = {
+                left: this.container_ele.offsetLeft,
+                top: this.container_ele.offsetTop
+            }
+            // 获取焦点框的宽高
+            this.focus_size = {
+                with: 300,
+                height: 300
+            }
+        };
+
+        Magnifier.prototype.bindEvent = function () {
+            var mag = this
+            this.small_img_ele.addEventListener("mouseover", function () {
+                //调用显示功能
+                mag.toggle("show")
+            })
+            this.small_img_ele.addEventListener("mouseout", function () {
+                // 调用显示隐藏功能; 
+                mag.toggle("hide");
+            })
+            this.small_img_ele.addEventListener("mousemove", function (e = event) {
+                mag.focusMove(e.clientX, e.clientY)
+                mag.bigimgMove();
+            })
+            for (let i = 0; i < this.img_li.length; i++) {
+                this.img_li[i].addEventListener("click", function () {
+                    console.log(i);
+                    mag.small_img.setAttribute("src", "./images/" + [i + 1] + ".jpg")
+                    mag.big_img.setAttribute("src", "./images/" + [i + 1] + ".big.jpg")
+                })
+            }
+
+        };
+        Magnifier.prototype.toggle = function (type) {
+            switch (type) {
+                case "show":
+                    this.big_img_ele.style.display = "block"
+                    this.focus_ele.style.display = "block"
+                    break;
+                case "hide":
+                    this.big_img_ele.style.display = "none"
+                    this.focus_ele.style.display = "none"
+                    break;
+            }
+        }
+        Magnifier.prototype.focusMove = function (x, y) {
+            var _left = x - this.container_offset.left - this.focus_size.with / 2
+            var _top = y - this.focus_size.height / 2 - 100
+            if (_left < 0) {
+                _left = 0
+            }
+            if (_top < 0) {
+                _top = 0
+            }
+            if (_left > 150) {
+                _left = 150
+            }
+            if (_top > 150) {
+                _top = 150
+            }
+            this.focus_ele.style.left = _left + "px"
+            this.focus_ele.style.top = _top + "px"
+
+            this.pop_left = _left / 150
+            this.pop_top = _top / 150
+        }
+        Magnifier.prototype.bigimgMove = function () {
+            this.bigimg.style.left = -this.pop_left * 250 + "px"
+            this.bigimg.style.top = -this.pop_top * 250 + "px"
+        }
+
+        var m = new Magnifier()
+        m.bindEvent()
+    </script>
+</body>
+
+</html>

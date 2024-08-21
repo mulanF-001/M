@@ -1,0 +1,45 @@
+@import "./_header.scss";
+@import "./_biaoti.scss";
+@import "./bot-text";
+@import "./footer";
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    background-color: #f6f1eb;
+    font-family: PingFang SC, 萍方, Noto Sans, Microsoft YaHei, 微软雅黑, SimHei, 黑体, Helvetica W01, Helvetica Neue,
+        sans-serif;
+    color: #444;
+    line-height: 157.1428571429%;
+    font-weight: 200;
+}
+.wnqc::after{
+content: "";
+display: block;
+clear: both;
+visibility: hidden;
+}
+* {
+    box-sizing: border-box;
+}
+.all {
+    width: 1124px;
+    height: auto;
+    margin: 0 auto;
+
+    header {
+        height: 40px;
+        width: 100%;
+        background-color: beige;
+    }
+    .sousuo{
+        display: flex;
+    }
+   
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+}
